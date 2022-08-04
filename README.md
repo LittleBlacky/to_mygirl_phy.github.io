@@ -1,2 +1,2 @@
-# https://github.com/LittleBlacky/to_mygirl_phy.github.io/index.html
+# [to_my_girl](https://littleblacky.github.io/to_mygirl_phy.github.io/)
 
