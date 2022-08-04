@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://www.albee.me/index3.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Our Love Story</title>
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('./Digital-7Mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="./default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./jquery.js"></script><style type="text/css" abt="234"></style>
+	<script type="text/javascript" src="./garden.js"></script>
+  <script type="text/javascript" src="./functions.js"></script>
+</head>
+<body>
+	<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 27.5px; margin-left: 83px;">
+			<div id="code" style="margin-top: 112.5px;">
+				<span class="comments">我的女孩儿：</span><br>
+				<span class="space comments">哈哈哈哈哈哈哈哈哈</span><br>
+				<span class="space comments">我们的第一个七夕捏~<br>
+				<span class="space comments">先送你一个爱心花环~<br>
+				<span class="space comments">虽然最近比较忙<br>
+				<span class="space comments">但是我没有忘记哦，没有忘记哦，没有忘记哦！<br>
+				<span class="space comments">我们还需要一段时间磨合<br>
+				<span class="space comments">但是你要在银河的对岸等着我呀<br>
+				<span class="space comments">不能走开哦~<br>
+				<span class="space comments">我要头也不回的坚定的跨向你那边。<br>
+				<span class="space comments">七夕快乐！<br>
+				<span class="space comments">嘿嘿嘿嘿<br>
+			</span></span></span></span></span></span></span></span></span></span>_</div>
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words" style="position: absolute; top: 222.5px; left: 593px;">
+					<div id="messages" style="display: block;">
+						七夕快乐！
+						<div id="elapseClock"><span class="digit">181</span> days <span class="digit">16</span> hours <span class="digit">53</span> minutes <span class="digit">23</span> seconds</div>
+					</div>
+					<div id="loveu" style="display: block;">
+						   我会一直坚定的选择你,嘿嘿嘿!<br>
+						<div class="signature"> - 呆头熊</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<audio src="./love.mp3" id="music" autoplay="autoplay"></audio>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2022, 6, 20);
+		together.setHours(22);
+		together.setMinutes(42);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
