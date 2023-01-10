@@ -13,34 +13,33 @@
 	<link href="./default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="./jquery.js"></script><style type="text/css" abt="234"></style>
 	<script type="text/javascript" src="./garden.js"></script>
-  <script type="text/javascript" src="./functions.js"></script>
+    <script type="text/javascript" src="./functions.js"></script>
 </head>
 <body>
 	<div id="mainDiv">
 		<div id="content" style="width: 1110px; height: 625px; margin-top: 27.5px; margin-left: 83px;">
 			<div id="code" style="margin-top: 112.5px;">
-				<span class="comments">我的女孩儿：</span><br>
-				<span class="space comments">哈哈哈哈哈哈哈哈哈</span><br>
-				<span class="space comments">我们的第一个七夕捏~<br>
-				<span class="space comments">先送你一个爱心花环~<br>
-				<span class="space comments">虽然最近比较忙<br>
-				<span class="space comments">但是我没有忘记哦，没有忘记哦，没有忘记哦！<br>
-				<span class="space comments">我们还需要一段时间磨合<br>
-				<span class="space comments">但是你要在银河的对岸等着我呀<br>
-				<span class="space comments">不能走开哦~<br>
-				<span class="space comments">我要头也不回的坚定的跨向你那边。<br>
-				<span class="space comments">七夕快乐！<br>
-				<span class="space comments">嘿嘿嘿嘿<br>
+				<span class="comments">To phy：</span><br>
+				<span class="space comments">谢谢这三个月的陪伴</span><br>
+                <span class="space comments">早安是每一天的开始<br>
+                <span class="space comments">我们，一起过了七夕<br>
+                <span class="space comments">一起看新生军训、晚自习<br>
+				<span class="space comments">生日礼物：情侣装，特别喜欢。<br>
+				<span class="space comments">一起看电影<br>
+				<span class="space comments">一起打游戏<br>
+				<span class="space comments">每天一起分享抖音视频，开开心心入睡<br>
+				<span class="space comments">晚安是每天的结束，开心，伤心睡一觉就好了~<br>
+				<span class="space comments">我相信早晨还是会到来的~晚安~<br>
 			</span></span></span></span></span></span></span></span></span></span>_</div>
 			<div id="loveHeart">
 				<canvas id="garden" width="670" height="625"></canvas>
 				<div id="words" style="position: absolute; top: 222.5px; left: 593px;">
 					<div id="messages" style="display: block;">
 						Waiting for you.
-						<div id="elapseClock"><span class="digit">181</span> days <span class="digit">16</span> hours <span class="digit">53</span> minutes <span class="digit">23</span> seconds</div>
+						<div id="elapseClock"><span class="digit"></span> days <span class="digit"></span> hours <span class="digit"></span> minutes <span class="digit"></span> seconds</div>
 					</div>
 					<div id="loveu" style="display: block;">
-						   我会一直坚定的选择你,嘿嘿嘿!<br>
+						   我们还会再见的，希望下次我们再也不会留下遗憾。
 						<div class="signature"> - 呆头熊</div>
 					</div>
 				</div>
@@ -52,11 +51,8 @@
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2022, 6, 20);
-		together.setHours(22);
-		together.setMinutes(42);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
+		together.setFullYear(2025,12,14);
+		together.setHours(18,0,0,0);
 
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
@@ -75,7 +71,7 @@
 			timeElapse(together);
 			setInterval(function () {
 				timeElapse(together);
-			}, 500);
+			}, 1000);
 
 			adjustCodePosition();
 			$("#code").typewriter();
