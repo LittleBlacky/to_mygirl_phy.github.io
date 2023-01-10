@@ -87,12 +87,23 @@ function startHeartAnimation() {
 
 function timeElapse(c) {
   var e = Date();
-  var totalSecond = (Date.parse(c)-Date.parse(e))/1000;
-  var day = Math.floor(totalSecond/3600/24)-31;
-  var hours = Math.floor(totalSecond/3600%60);
-  var min = Math.floor(totalSecond/60%60);
-  var sec = Math.floor(totalSecond%60);
-  var a = '<span class="digit">' + day + '</span> days <span class="digit">' + hours + '</span> hours <span class="digit">' + min + '</span> minutes <span class="digit">' + sec + "</span> seconds";
+  var f = (Date.parse(e) - Date.parse(c)) / 1000;
+  var g = Math.floor(f / (3600 * 24));
+  f = f % (3600 * 24);
+  var b = Math.floor(f / 3600);
+  if (b < 10) {
+    b = "0" + b
+  }
+  f = f % 3600;
+  var d = Math.floor(f / 60);
+  if (d < 10) {
+    d = "0" + d
+  }
+  f = f % 60;
+  if (f < 10) {
+    f = "0" + f
+  }
+  var a = '<span class="digit">' + g + '</span> days <span class="digit">' + b + '</span> hours <span class="digit">' + d + '</span> minutes <span class="digit">' + f + "</span> seconds";
   $("#elapseClock").html(a)
 }
 
